@@ -11,6 +11,6 @@ function string_search($needle, $haystack)
         return false;
     }
 
-    return "Found '$needle' at index $position";
+    return "Found '$needle' at position $position";
 
 }
