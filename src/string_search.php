@@ -1,7 +1,7 @@
 <?php
 
 function string_search ($needle, $haystack) {
-    $position = stripos ($haystack, $needle);
+    $position = strpos ($haystack, $needle);
 
     if ($position === false || $needle === '') {
         return false;
