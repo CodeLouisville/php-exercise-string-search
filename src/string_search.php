@@ -1,22 +1,22 @@
 <?php
 
-$myString = "I love PHP programming and my friend Jenny also loves PHP programming!";
-$search = "PHP";
+$haystack = "I love PHP programming and my friend Jenny also loves PHP programming!";
+$needle = "PHP";
 
-function string_search($myString, $search){
-	global $myString;
-	global $search;
-	if($search === ""){
+function string_search($haystack, $needle){
+	global $haystack;
+	global $needle;
+	if($needle === ""){
 		return false;
 	} else {
-	return strpos($myString, $search);
+	return strpos($haystack, $needle);
 	}
 }
 
 if(string_search() === false){
 	print_r("Needle is empty");
 } else {
-print_r("find $search at the index " . string_search());
+print_r("find $needle at the index " . string_search());
 }
 
 
