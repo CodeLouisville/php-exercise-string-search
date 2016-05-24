@@ -10,7 +10,7 @@ function string_search($needle, $haystack){
     if($pos === false){
         return false;
         } else {
-        return "found your" . $needle . " at " . $pos; 
+        return "found your '$needle' at $pos"; 
         }
     }
 } 
