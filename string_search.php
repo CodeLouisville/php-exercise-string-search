@@ -1,7 +1,7 @@
 ﻿<?php 
-function string_search($needle, $haystack){ 
+	function string_search($needle, $haystack){ 
     
-    if($needle == ''){ 
+    if($needle == ""){ 
        return false; 
     } 
 
@@ -10,7 +10,7 @@ function string_search($needle, $haystack){
     if($pos === false){
         return false;
         } else {
-        return "found your '$needle' at $pos"; 
+        return "Found '$needle' at position $pos"; 
         }
     }
 } 
