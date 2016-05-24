@@ -1,12 +1,11 @@
-﻿<? php
-
+﻿<?php 
+function string_search($needle, $haystack){ 
     
-    function string_search($needle, $haystack){
-        if($needle == ''){
-        return false;
-        }
+    if($needle == ''){ 
+       return false; 
+    } 
 
-    $pos = strpos($haystack, $needle);
+    $pos = strpos($haystack, $needle); 
 
     if($pos === false){
         return false;
@@ -14,5 +13,5 @@
         return "found your" . $needle . " at " . $pos; 
         }
     }
-
-?>
+} 
+?>  
