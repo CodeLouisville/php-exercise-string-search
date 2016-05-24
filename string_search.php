@@ -1,5 +1,8 @@
-﻿<?php 
-	function string_search($needle, $haystack){ 
+<?php 
+$haystack = "derp"
+$needle = "e"
+
+function string_search($needle, $haystack){ 
     
     if($needle == ""){ 
        return false; 
