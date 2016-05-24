@@ -1,14 +1,14 @@
-<?php 
+<? php 
+
 $haystack = "derp"
-$needle = "e"
+$needle = "d"
+$pos = strpos($haystack, $needle); 
 
 function string_search($needle, $haystack){ 
     
-    if($needle == ""){ 
+    if($needle === ""){ 
        return false; 
-    } 
-
-    $pos = strpos($haystack, $needle); 
+    }
 
     if($pos === false){
         return false;
@@ -17,4 +17,5 @@ function string_search($needle, $haystack){
         }
     }
 } 
+
 ?>  
