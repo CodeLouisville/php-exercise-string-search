@@ -8,14 +8,15 @@ function string_search($needle, $haystack){
 	if($needle === ""){
 		return false;
 	} else {
-	return strpos($haystack, $needle);
+		$position = strpos($haystack, $needle);
+	
+		if($position === false){
+			return false;
+		} else {
+			return "Found '$needle' at index $position";
+		}
 	}
 }
 
-if(string_search($needle, $haystack) === false){
-	print_r("Needle is empty");
-} else {
-print_r("Found '$needle' at index " . string_search($needle, $haystack));
-}
 
 
