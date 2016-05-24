@@ -1,11 +1,10 @@
 <?php
 
-$haystack = "I love PHP programming and my friend Jenny also loves PHP programming!";
-$needle = "PHP";
+$haystack = "abracadabra";
+$needle = "ab";
 
-function string_search($haystack, $needle){
-	global $haystack;
-	global $needle;
+function string_search($needle, $haystack){
+	
 	if($needle === ""){
 		return false;
 	} else {
@@ -13,10 +12,10 @@ function string_search($haystack, $needle){
 	}
 }
 
-if(string_search() === false){
+if(string_search($needle, $haystack) === false){
 	print_r("Needle is empty");
 } else {
-print_r("find $needle at the index " . string_search());
+print_r("Found '$needle' at index " . string_search($needle, $haystack));
 }
 
 
