@@ -6,13 +6,13 @@ function string_search($needle, $haystack){
 		return false;
 	} else{
 		$x = strpos($haystack, $needle);
-		echo "Found '".$needle."' at index ".$x;
-		//return true;
+		$ans = "Found '".$needle."' at index ".$x;
+		return $ans;
 	}
 }
 
 //var_dump(string_search("Code Louisville", "Searching Code Louisville."));
 
-//string_search("Code Louisville", "Searching Code Louisville.");
+string_search("Code Louisville", "Searching Code Louisville.");
 
 //var_dump(string_search("zx", "Searching Code Louisville."));
