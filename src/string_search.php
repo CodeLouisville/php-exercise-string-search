@@ -1,13 +1,16 @@
 <?php
 
-error_reporting(E_ALL);
-
 function string_search($needle, $haystack) {
+	
+	if ($needle === '') {
+		return false;
+	}
+	
 	$find = strpos($haystack, $needle);
 	
-	if ($find === true) {
-		return "Found $needle at index $find";
+	if ($find === false) {
+		return false;
 	} else {
-		return $find;
+		return "Found '$needle' at index $find";
 	}
 }
