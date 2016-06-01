@@ -13,6 +13,6 @@ function string_search($needle, $haystack){
 
 //var_dump(string_search("Code Louisville", "Searching Code Louisville."));
 
-string_search("Code Louisville", "Searching Code Louisville.");
+//string_search("Code Louisville", "Searching Code Louisville.");
 
 //var_dump(string_search("zx", "Searching Code Louisville."));
