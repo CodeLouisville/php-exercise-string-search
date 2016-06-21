@@ -1,6 +1,7 @@
 <?php
 	//$haystack = "intermittent";
 	//$needle = "matt";
+	//$needle = "mitt";
 	//$needle = "";
 	
 	if($needle !== "") {
