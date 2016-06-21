@@ -6,9 +6,9 @@ function string_search($needle, $haystack) {
     if ($needle === "") {
         return false;
         echo "'$needle' was not found in '$haystack.'";
-    } elseif ($needle === "" || $needle === 0) {
+    } else {
         echo "'$needle' was found in '$haystack' at '$pos'.";
     }
 }
 
-/?>
+?>
