@@ -1,8 +1,8 @@
 <?php
 
-function string_search($needle, $haystack) {
-    $pos = strpos($needle, $haystack);
+$pos = strpos($needle, $haystack);
 
+function string_search($needle, $haystack) {
     if ($needle === "") {
         return false;
     } else {
