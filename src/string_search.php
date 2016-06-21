@@ -7,7 +7,7 @@ function string_search($needle, $haystack) {
         return false;
         echo "'$needle' was not found in '$haystack.'";
     } else {
-        echo "'$needle' was found in '$haystack' at '$pos'."
+        echo "'$needle' was found in '$haystack' at '$pos'.";
     }
 }
 
