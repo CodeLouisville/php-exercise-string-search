@@ -6,7 +6,7 @@ function string_search($needle, $haystack) {
         return false;
     }
     $pos = strpos($haystack, $needle);
-    if ($pos >= 0) {
+    if ($pos !== false) {
         return "Found '" . $needle . "' at index " . $pos;
     } else {
         return false;
