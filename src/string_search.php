@@ -4,10 +4,12 @@
 function string_search($needle,$haystack){
   $pos = strpos($haystack, $needle);
    if ($pos === false) {
-    echo "The string '$needle' was not found in the string '$haystack'";
+        return false#return false echo "The string '$needle' was not found in the string '$haystack'";
       } else {
-        echo "The string '$needle' was found in the string '$haystack'";
-        echo " and exists at position $pos";
+        return `Found '$needle' at index $pos`
+
+        # return echo "The string '$needle' was found in the string '$haystack'";
+        # return echo " and exists at position $pos";
       }
 }
 #string_search($needle,$haystack);
