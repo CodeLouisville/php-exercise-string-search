@@ -15,4 +15,5 @@ function string_search($needle, $haystack){
   }
   return false;
 }
+}
 ?>
