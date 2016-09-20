@@ -10,8 +10,8 @@
 // If needle is an empty string, string_search() should return false.
 // If needle is found in haystack multiple times, string_search() should return the first index.
 
-$haystack = 'Elephants are afraid of needles!';
-$needle = 'needle';
+// $haystack = 'Elephants are afraid of needles!';
+// $needle = 'needle';
 
 function string_search($needle, $haystack) {
 
@@ -27,6 +27,6 @@ function string_search($needle, $haystack) {
 	}
 }
 
-echo string_search();
+// echo string_search();
 
 ?>
