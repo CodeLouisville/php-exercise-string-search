@@ -1,5 +1,5 @@
 <?php
-function string_search($haystack, $needle){
+function string_search($needle, $haystack){
 
   $position =  strpos($haystack, $needle);
 
@@ -13,5 +13,4 @@ function string_search($haystack, $needle){
           return "Found '$needle' at index $position";
          }
 }
-
- ?>
+?>
