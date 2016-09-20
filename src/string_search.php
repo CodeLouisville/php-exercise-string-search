@@ -1,6 +1,6 @@
 <?php
 
-function string_search($haystack, $needle) {
+function string_search($needle, $haystack) {
         $search = strpos($haystack, $needle);
   
         if (is_int($search)) {
