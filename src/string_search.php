@@ -7,9 +7,11 @@ function string_search($needle, $haystack) {
             return false;
         }
   
-        if ($search >= 0) {
+        if (is_int($search)) {
             return "Found '$needle' at index $search";
         } else {
             return false;
         }
 }
+
+var_dump(string_search('not there', 'Some string.'));
