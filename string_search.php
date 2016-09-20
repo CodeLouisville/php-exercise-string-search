@@ -1,12 +1,18 @@
 <?php
 function string_search($needle, $haystack){
-  $position = strpos($haystack, $needle);
-  if($needle==""){
+  if(empty($needle)){
     return false;
-  } elseif($position) {
-    return "Found '$needle' at index $position";
   } else {
-    return false;
+    $position = strpos($haystack, $needle);
+
+    if($position || $needle === '') {
+        return false;
+    } else {
+        return "Found '$needle' at index $position";
   }
+  if ($position !== false) {
+    return "Found '$needle' at index $position";
+  }
+  return false;
 }
 ?>
