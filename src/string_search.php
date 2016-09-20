@@ -1,15 +1,13 @@
 <?php
 function string_search($needle, $haystack){
 
-  $position =  intval(strpos($haystack, $needle));
-
-  if ($needle == false) {
+  if ($needle==false) {
     return false;
-  }elseif ($position >=0){
+  }
+  else {
+      $position = strpos($haystack, $needle);
       return "Found '$needle' at index $position";
-  } else {
-    return false;
-    }
+  }
 }
 
 ?>
