@@ -1,10 +1,10 @@
 <?php
 
 function string_search($needle, $haystack) {
-        if ($needle !== "") {
-            $search = strpos($haystack, $needle);
-        } else {
+        if ($needle === "") {
             return false;
+        } else {
+            $search = strpos($haystack, $needle);
         }
   
         if (is_int($search)) {
@@ -13,5 +13,3 @@ function string_search($needle, $haystack) {
             return false;
         }
 }
-
-var_dump(string_search('not there', 'Some string.'));
