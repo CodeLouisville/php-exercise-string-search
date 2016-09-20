@@ -1,7 +1,7 @@
 <?php
 function string_search($needle, $haystack){
 
-  $position =  strpos($haystack, $needle);
+  $position =  intval(strpos($haystack, $needle));
 
   if ($needle == false) {
     return false;
@@ -11,4 +11,5 @@ function string_search($needle, $haystack){
     return false;
     }
 }
+
 ?>
