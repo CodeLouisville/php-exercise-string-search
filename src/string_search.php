@@ -5,7 +5,7 @@ function string_search($needle, $haystack){
 
   if (!$haystack || !$needle) {
     return false;
-  }elseif ($position == 0){
+  }elseif ($position === 0){
       return "Found '$needle' at index $position";
   }elseif (!$position){
          return false;
