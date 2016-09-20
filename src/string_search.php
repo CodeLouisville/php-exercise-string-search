@@ -13,18 +13,20 @@
 $haystack = 'Elephants are afraid of needles!';
 $needle = 'needle';
 
+function string_search($needle, $haystack) {
 
-if ($needle == '') {
-	echo 'false';
-} else {
-	$string_search = strpos($haystack, $needle);
-	if ($string_search !== false) {
-		echo "Found '$needle' at position $string_search";
+	if ($needle == '') {
+		return false;
 	} else {
-		echo 'false';
+		$string_search = strpos($haystack, $needle);
+		if ($string_search !== false) {
+			return "Found '$needle' at position $string_search";
+		} else {
+			return false;
+		}
 	}
 }
 
-
+echo string_search();
 
 ?>
