@@ -10,7 +10,7 @@ function string_search($needle,$haystack){
         echo " and exists at position $pos";
       }
 }
-string_search($needle,$haystack);
+#string_search($needle,$haystack);
 # String Search
 
 #For this PHP code exercise, create a file named `string_search.php`. This file should contain
