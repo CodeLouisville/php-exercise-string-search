@@ -9,7 +9,9 @@ function string_search($needle, $haystack){
 
     if ($position===0 | $position >0){
       return "Found '$needle' at index $position";
+    } else {
+        return false;
     }
    }
-} 
+}
 ?>
