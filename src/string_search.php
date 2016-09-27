@@ -2,6 +2,10 @@
 #$haystack = 'string search';
 #$needle   = 'search';
 function string_search($needle,$haystack){
+  if ($needle === false){
+    return false;
+  }
+   else{
   $pos = strpos($haystack, $needle);
    if ($pos === false) {
         return false; #return false echo "The string '$needle' was not found in the string '$haystack'";
@@ -12,6 +16,7 @@ function string_search($needle,$haystack){
         # return echo "The string '$needle' was found in the string '$haystack'";
         # return echo " and exists at position $pos";
       }
+    }
 }
 #string_search($needle,$haystack);
 # String Search
