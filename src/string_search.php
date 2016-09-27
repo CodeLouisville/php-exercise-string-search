@@ -2,7 +2,7 @@
 #$haystack = 'string search';
 #$needle   = 'search';
 function string_search($needle,$haystack){
-  if ($needle === false){
+  if ($needle == ''){
     return false;
   }
    else{
